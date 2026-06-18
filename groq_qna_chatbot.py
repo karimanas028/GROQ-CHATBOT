@@ -9,8 +9,6 @@ load_dotenv()
 prompt=ChatPromptTemplate.from_messages([('system', 'You are a helpful AI assistant'),
 ('human','Question:{Question}')])
 
-st.secrets['GROQ_API_KEY']
-
 def generate_response(query, llm, temperature, max_tokens, api_key):
     model=ChatGroq(model_name=llm,temperature=temperature, groq_api_key= api_key, max_tokens=max_tokens)
     parser= StrOutputParser()
