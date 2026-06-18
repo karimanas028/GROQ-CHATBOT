@@ -26,10 +26,8 @@ api=st.sidebar.text_input('Provide the API key', type= 'password')
 
 llm=st.sidebar.selectbox('Select the LLM : ',[
     "llama-3.3-70b-versatile",
-    "meta-llama/llama-4-scout-17b-16e-instruct",
     "llama-3.1-8b-instant",
     "openai/gpt-oss-20b",
-    "gemma2-9b-it",
     "qwen/qwen3-32b",
 ])
 
